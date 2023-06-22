@@ -45,13 +45,12 @@
         </p>
         <div class="control">
             <label for="roll-count">Your target number</label>
-            <input type="number" id="roll-count">
+            <input type="number" min="1" max="6" id="roll-count">
         </div>
-        <button>Roll Dice!</button>
-        <p>It took you <strong>X</strong> rolls to roll a <strong>Y</strong></p>
+        <button id="btn4">Roll Dice!</button>
+        <ul id="dice-rolls"></ul>
+        <p>It took you <span id="output-total-rolls" class="output">X</span> rolls to roll a <span id="output-target-number" class="output">Y</strong></p>
     </section>
-
-    <button id="myButton">Click me</button>
 
 </body>
 </html>

@@ -70,3 +70,46 @@ function displayUser() {
 }
 
 displayUserBtn.addEventListener('click', displayUser);
+
+//While Loop
+// Roll Dice
+
+const rollDiceBtn = document.getElementById('btn4');
+
+function rollDice() {
+  return Math.floor( Math.random() * 6) + 1; // random number btwn 0 and 6;
+} // get random number from dice roll
+
+function diceRolls() {
+  const targetInput = document.getElementById('roll-count');
+  const diceRollList = document.getElementById('dice-rolls')
+  const enteredNumber = targetInput.value;
+  diceRollList.innerHTML = '';
+
+  let hasRolled = false;
+  let numberOfRolls = 0
+
+  while(!hasRolled) {
+    const rolledNumber = rollDice();
+    // if(rolledNumber == enteredNumber) {
+    //   hasRolled = true;
+    // }
+    numberOfRolls++;
+    const newRollList = document.createElement('li');
+    const outputText = 'roll ' + numberOfRolls + ': ' + rolledNumber
+    newRollList.textContent = outputText;
+    diceRollList.append(newRollList);
+
+    hasRolled = rolledNumber == enteredNumber
+  }
+
+  const outputRolls = document.getElementById('output-total-rolls');
+  const outputTargetNumber = document.getElementById('output-target-number');
+
+  outputTargetNumber.textContent = enteredNumber;
+  outputRolls.textContent = numberOfRolls;
+
+
+}  // derived number of dice rolls
+
+rollDiceBtn.addEventListener('click', diceRolls)
