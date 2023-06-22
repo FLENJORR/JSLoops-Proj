@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+    <title>Loop JS</title>
+</head>
+<body>
+    <h1>JavaScript Loops in Action</h1>
+    <section id="calculator">
+        <h2>JavaScript Calculator</h2>
+        <p>Determine the sum of all numbers (beginning at zero) up to a number of your choice</p>
+        <div class="control">
+            <label for="user-number">Your Number</label>
+            <input type="number" id="user-number">
+        </div>
+        <button id="btn1">Calculate Sum</button>
+        <p id="calculated-sum" class="output"></p>
+    </section>
+
+    <section id="highlight-links">
+        <h2>Highlight Links</h2>
+        <button id="btn2">Highlight all links in the text</button>
+        <p >This is some text that also contains useful links like <a id="this">this one</a> that actually leads to nowhere because
+        this text is and example is <strong>not</strong> about the anchor elements or the link destinations but instead about
+        JavaScript.</p>
+        <p>Because you can use <a href="https://developer.mozilla.org/javascript">JavaScript</a> (okay, this link 
+        actually <strong>does</strong> lead somewhere) not just for funny demos or useless examples but for real useful things - like
+        highlighting the links in a text.</p>
+        <p>You can dive deeper into JavaScript with one of our bestselling, deep-dive JavaScript focused <a href="https://google.com">courses</a></p>
+    </section>
+
+    <section id="user-data">
+        <h2>Your Information</h2>
+        <button id="btn3">Display User Data</button>
+        <ul id="output-user-data"></ul>
+    </section>
+
+    <section id="statistics">
+        <h2>Statistics</h2>
+        <p>Test your luck and find out how many dice rolls (1-6 dice) it takes you to roll a certain number 
+            (between 1 and 6)
+        </p>
+        <div class="control">
+            <label for="roll-count">Your target number</label>
+            <input type="number" id="roll-count">
+        </div>
+        <button>Roll Dice!</button>
+        <p>It took you <strong>X</strong> rolls to roll a <strong>Y</strong></p>
+    </section>
+
+    <button id="myButton">Click me</button>
+
+</body>
+</html>
